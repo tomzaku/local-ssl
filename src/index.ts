@@ -15,6 +15,7 @@ const main = async () => {
   console.log(welcome);
   const program = new commander.Command()
     .version(packageJson.version)
+    .description("A CLI tool to enable your local ssl just a single step")
     .option("-s, --source <port>", "Source port to enable ssl")
     .option("-t, --target <port>", "Target port")
     .option("-n, --hostname <hostname>", "Hostname to certificate such as: localhost, facebook.com")

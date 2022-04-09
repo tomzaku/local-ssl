@@ -5,6 +5,13 @@
   "main": "index.js",
   "author": "Tom Le",
   "license": "MIT",
+  "homepage": "https://github.com/tomzaku/local-ssl",
+  "keywords": [
+    "ssl",
+    "local",
+    "https",
+    "forward"
+  ],
   "scripts": {
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch",
