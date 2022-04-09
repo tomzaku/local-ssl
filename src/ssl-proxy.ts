@@ -16,6 +16,7 @@ type Params = {
 
 const createCertificate = async (hostname: string) => {
   const certPath = `${__dirname}/../cert`;
+  await exec(`mkdir -p ${certPath}`)
   await exec(`sh -c "cd ${certPath} && mkcert ${hostname}"`);
   return {
     certFile: path.join(certPath, `${hostname}.pem`),
