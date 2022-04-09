@@ -19,4 +19,5 @@ export const installRequirements = async () => {
     await exec("brew install nss")
   }
   await exec('mkcert -install')
+  console.log("you might run: local-ssl --target 1800 --hostname abcxyzz.com")
 }
