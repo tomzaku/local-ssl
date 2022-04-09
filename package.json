@@ -1,6 +1,6 @@
 {
   "name": "local-ssl",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Make your local https just a simple step",
   "main": "index.js",
   "author": "Tom Le",
@@ -19,7 +19,9 @@
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "babel src --out-dir lib --extensions \".ts\" --source-maps inline --config-file ./.babelrc",
     "install:global": "yarn build:js && yarn link",
-    "prepublish": "yarn build:js"
+    "prepare": "yarn build:js",
+    "postprepare": "local-ssl -i"
+
   },
   "bin": {
     "local-ssl": "bin/local-ssl"
