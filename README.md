@@ -32,4 +32,6 @@ Options:
 local-ssl -t 3000 -s 443 -n abcxyz.com
 ```
 
-![Demo](./demo.mov)
+
+https://user-images.githubusercontent.com/19413272/162612386-4980cb4a-871a-448a-b9ef-1b959f5ca715.mov
+
